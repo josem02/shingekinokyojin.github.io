@@ -1,0 +1,60 @@
+* {padding: 0; margin: 0;}
+p{margin-bottom: 20px;}
+
+header {
+background: rgba(0,0,0,0.9);
+width: 100%;
+position: fixed;
+z-index: 100;
+}
+
+nav {float: left;} /*La sección nav se alineará a la izquierda*/
+
+nav ul {list-style: none; /*se elimina el estilo de los elementos ul*/
+overflow: hidden;} /*Al ser un elemento flotante, así indicamos que no
+muestre barras de posición*/
+
+nav ul li {float: left; font-family: Arial, sans-serif; font-size: 16px;}
+
+nav ul li a {display: block;
+/*se convierte el objeto en bloque para manipular el margen y el relleno*/
+padding: 20px; /*Creamos un relleno de 20 pixels*/
+color: #fff; /*Las letras de los enlaces tendrán color blanco*/
+text-decoration: none;}
+
+nav ul li:hover {;
+animation-duration: 1s; /*duración*/
+animation-name: fadein;
+background: #3aa4e8}
+/*Al pasar el puntero por encima del enlace, este cambiará de color*/
+@keyframes fadein{
+from{background: rgba(0,0,0,0.9);}
+/*Inicio de la animación (desde)*/
+to{background: #3aa4e8}
+/*Final de la animación (hasta)*/
+}
+
+
+.contenido{
+width: 80%;
+margin: auto;
+overflow:hidden;
+padding-top: 80px;}
+
+
+
+
+body {background: #bed4d2;}
+h1 {color: #030310;font-size:xxx-large;font-family: 'Bebas Neue', cursive;text-align:center; text-decoration:underline}
+h1:hover{color:black}
+h2 {font-size:xx-large;font-family: 'Bebas Neue', cursive;text-decoration:underline;}
+h3{font-size:xx-large;font-family: 'Bebas Neue', cursive;text-decoration:underline;}
+
+.personajes{color:black; font-size:large;font-family: 'Oswald', sans-serif;}
+.temporadas{color:black; font-size:large;font-family: 'Oswald', sans-serif;text-align:justify; }
+.tabla{color:black; font-size:large;font-family: 'Oswald', sans-serif;  border: 1px solid #000;border-collapse: collapse;width: 30%;border-style:inset;}
+
+tr, td{ border: 1px solid #000;width: 80%; border-style:inset;}
+
+nav ul li:hover{
+
